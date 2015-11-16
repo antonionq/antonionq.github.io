@@ -1,0 +1,275 @@
+@font-face {
+    font-family: BonvenoCF;
+    src: url(BonvenoCF/BonvenoCF-Light.otf);
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased !important;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.top {
+  height: 100vh;
+  background-image: url('rsz_background3.png');
+  background-size: cover;
+  background-color: black;
+  position: relative;
+  overflow: auto;
+  animation: animat_show 0.8s;
+}
+
+.nameWrap {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.name {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'BonvenoCf', Fallback, sans-serif;
+  font-size: 3em;
+  color: #3d3d3d;
+  animation-delay: .5s;
+}
+
+.title {
+  font-size: 1.2em;
+  color: #3d3d3d;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  animation-delay: 1s;
+  padding-top: 20px;
+}
+
+@-webkit-keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
+    }
+
+.imgContainer {
+  width: 10%;
+  height: 10%;
+  margin: 0 auto;
+}
+
+#headshot {
+  width: 100%;
+  height: 100%;
+  margin-top: 10vh;
+}
+
+.about {
+  height: 80vh;
+  background-color: white;
+}
+
+.aboutText {
+  width: 45%;
+  height: 20%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5vh;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  color: #3d3d3d;
+    animation-delay: .4s;
+}
+
+.arrowContainer {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 88vh;
+  left: 48.5%;
+}
+
+#arrow {
+  position: relative;
+  width: 35%;
+  cursor:pointer;
+  -webkit-animation: floatBubble 0.7s infinite;
+  -webkit-animation-direction:alternate;
+}
+
+
+  @-webkit-keyframes floatBubble{
+   from{
+            top: 0;
+          -webkit-animation-timing-function: ease-in;
+
+     }
+
+
+     to {
+        top: 10px;
+        -webkit-animation-timing-function: ease-out;
+     }
+
+ }
+
+.projects {
+  height: 70vh;
+  background-color: white;
+}
+
+.project-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222222;
+}
+
+.project-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 800px;
+  height: 35%;
+  margin: 0 auto;
+  padding-top: 5%;
+  flex-wrap: wrap;
+}
+
+.project-one {
+  width: 375px;
+  height: 300px;
+  background-color: #2C2D32;
+  margin-right: 2%;
+  overflow: hidden;
+}
+
+.project-two {
+  width: 375px;
+  height: 300px;
+  background-color: #336699;
+  margin-left: 2%;
+  overflow: hidden;
+}
+
+.project-one-desc {
+  width: 375px;
+  height: 75px;
+  background-color: #222222;
+  margin-right: 2%;
+  opacity: 0;
+  margin-top: 300px;
+  -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+}
+
+.project-two-desc {
+  width: 375px;
+  height: 75px;
+  background-color: #222222;
+  margin-top: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+}
+
+.project-one:hover > .project-one-desc {
+    opacity: 1;
+    transition: transform 0.4s;
+    transform: translateY(-75px);
+}
+
+.project-two:hover > .project-two-desc {
+    opacity: 1;
+    transition: transform 0.4s;
+    transform: translateY(-75px);
+}
+
+
+
+.skills-wrap {
+  width: 70%;
+  height: 30vh;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 5%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1.6em;
+  padding-bottom: 20px;
+}
+
+.skills div {
+  width: 200px;
+}
+
+.skills div span {
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .aboutText {
+    width: 65%;
+  }
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 4%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.email {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  padding-right: 4%;
+}
+
+.phone {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  padding-left: 4%;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 4%;
+}
+
+.icons {
+  font-size: 3em;
+  color: #222222;
+  /*margin: 3% 2% 0 2%;*/
+  padding: 0 .2em 0 .2em;
+  margin-bottom: 70px;
+  border: 1px solid #222222;
+}
+
+.icons a {
+  color: #222222;
+}
