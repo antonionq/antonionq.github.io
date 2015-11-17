@@ -248,6 +248,10 @@ html, body {
   padding-right: 4%;
 }
 
+#contactSep {
+  border: 1px solid lightgray;
+}
+
 .phone {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
@@ -258,18 +262,21 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-left: 4%;
+  margin-top: 60px;
 }
 
 .icons {
   font-size: 3em;
-  color: #222222;
-  /*margin: 3% 2% 0 2%;*/
   padding: 0 .2em 0 .2em;
-  margin-bottom: 70px;
-  border: 1px solid #222222;
+  margin-bottom: 140px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .icons a {
+  color: #565656;
+}
+
+.icons a:hover {
   color: #222222;
 }
