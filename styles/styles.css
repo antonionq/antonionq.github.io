@@ -144,20 +144,30 @@ html, body {
   background-color: #2C2D32;
   margin-right: 2%;
   overflow: hidden;
+  background-image: url('logo.png');
+  background-size: cover;
 }
 
 .project-two {
   width: 375px;
   height: 300px;
-  background-color: #336699;
+  /*background-color: #336699;*/
   margin-left: 2%;
   overflow: hidden;
+  background-image: url('devvit.png');
+  background-size: contain;
+  background-position: center;
 }
 
 .project-one-desc {
   width: 375px;
   height: 75px;
   background-color: #222222;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.3em;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
   margin-right: 2%;
   opacity: 0;
   margin-top: 300px;
@@ -167,10 +177,20 @@ html, body {
          -o-transition: all 0.3s ease-in-out;
 }
 
+.project-one-desc a {
+  text-decoration: none;
+  color: white;
+}
+
 .project-two-desc {
   width: 375px;
   height: 75px;
   background-color: #222222;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.3em;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
   margin-top: 300px;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
