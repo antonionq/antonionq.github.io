@@ -114,8 +114,8 @@ html, body {
  }
 
 .projects {
-  height: 70vh;
   background-color: white;
+  margin-bottom: 150px;
 }
 
 .project-title {
@@ -159,7 +159,32 @@ html, body {
   background-position: center;
 }
 
-.project-one-desc {
+.project-three {
+  width: 375px;
+  height: 300px;
+  /*background-color: #336699;*/
+  margin-right: 2%;
+  margin-top: 2%;
+  overflow: hidden;
+  background-image: url('tumbleFeed.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.project-four {
+  width: 375px;
+  height: 300px;
+  /*background-color: #336699;*/
+  margin-left: 2%;
+  margin-top: 2%;
+  overflow: hidden;
+  background-image: url('aaLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-desc {
   width: 375px;
   height: 75px;
   background-color: #222222;
@@ -177,12 +202,12 @@ html, body {
          -o-transition: all 0.3s ease-in-out;
 }
 
-.project-one-desc a {
+.project-desc a {
   text-decoration: none;
   color: white;
 }
 
-.project-two-desc {
+/*.project-two-desc {
   width: 375px;
   height: 75px;
   background-color: #222222;
@@ -197,15 +222,27 @@ html, body {
        -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
          -o-transition: all 0.3s ease-in-out;
-}
+}*/
 
-.project-one:hover > .project-one-desc {
+.project-one:hover > .project-desc {
     opacity: 1;
     transition: transform 0.4s;
     transform: translateY(-75px);
 }
 
-.project-two:hover > .project-two-desc {
+.project-two:hover > .project-desc {
+    opacity: 1;
+    transition: transform 0.4s;
+    transform: translateY(-75px);
+}
+
+.project-three:hover > .project-desc {
+    opacity: 1;
+    transition: transform 0.4s;
+    transform: translateY(-75px);
+}
+
+.project-four:hover > .project-desc {
     opacity: 1;
     transition: transform 0.4s;
     transform: translateY(-75px);
@@ -215,7 +252,7 @@ html, body {
 
 .skills-wrap {
   width: 70%;
-  height: 30vh;
+  /*height: 30vh;*/
   margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 5%;
